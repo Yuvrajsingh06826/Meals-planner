@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Body font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #4CAF50,rgb(32, 74, 32), #0a381e); /* Gradient from light green to dark green */
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e7e7e7; /* Lighten on hover */
+}
+
+.hero {
+    position: relative;
+    margin: 20px 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Sidebar Styling */
+aside {
+    background: url('../images/ap9.jpg') no-repeat center center / cover;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Set to ensure consistent size */
+}
+
+/* Adjust font and link colors inside aside */
+aside h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    padding: 0;
+}
+
+aside ul li {
+    margin: 0.5rem 0;
+}
+
+aside ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Centering the Gallery Heading */
+.gallery-heading {
+    text-align: center; /* Ensure the text is centered */
+    font-family: 'Playfair Display', serif; /* Serif font for elegance */
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 30px; /* Space between heading and gallery */
+    
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 15px; /* Spacing between grid items */
+    margin: 30px 0;
+    padding-left: 300px;
+}
+
+.gallery-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth effects */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+main {
+    float: left; /* Float the main content left */
+    width: 70%; /* Main content takes up 70% */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.sidebar {
+    float: right; /* Sidebar floats right */
+    width: 25%; /* Set width for sidebar */
+    background-color: #e7e7e7;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.full-width {
+    clear: both; /* Clear floats */
+    background-color: #d3ffd3;
+    padding: 20px;
+}
+/* Video Container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Video Styling */
+.video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+/* Video Hover Effects */
+.video:hover {
+    transform: scale(0.95); /* Reduces the size by 5% */
+    cursor: pointer;
+}
+
+footer {
+    clear: both; /* Clear floats */
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #4CAF50,rgb(32, 74, 32), #0a381e); /* Gradient from light green to dark green */
+    color: white;
+}
+
+/* Spacing and Font Weights */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Headings font */
+    margin: 20px 0;
+    font-weight: 700; /* Make headings bold */
+}
+
+p {
+    font-family: 'Montserrat', Ari
+}
